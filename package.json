@@ -1,5 +1,6 @@
 {
   "name": "cards",
+  "homepage": "https://github.com/MiKeBronko/cards.git",
   "version": "0.0.1",
   "description": "",
   "main": "script.js",
