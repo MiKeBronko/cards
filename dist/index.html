@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <!-- <link rel="stylesheet" href="./pages/index.css"> -->
+  <link rel="stylesheet" href="style.6c1e4eb3e423f8cdb457.css?7cb234b880820f07da49">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="src/images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="user-info__button-edit">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+    </div>
+
+    <div class="popup">
+      <div class="popup__content">
+        <img src="src/images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new">
+            <input id="name" type="text" required minlength="2" maxlength="30" name="name" class="popup__input popup__input_type_name" placeholder="Название">
+            <span id="error-name" class="popup__valid popup__valid-name"></span>
+            <input id="link" type="text" required name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку">
+            <span id="error-link" class="popup__valid popup__valid-name"></span>
+            <button id="submit" name='addCard' type="submit" class="button popup__button" disabled>+</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup-edit">
+      <div class="popup-edit__content">
+        <img src="src/images/close.svg" alt="" class="popup-edit__close">
+        <h3 class="popup-edit__title">Редактировать профиль</h3>
+        <form class="popup-edit__form" name="formInfoUser">
+            <input id="username" required type="text" minlength="2" maxlength="30" name="user" class="popup-edit__input popup-edit__input_username" placeholder="Имя">
+            <span id="error-username" class="popup-edit__valid popup-edit__valid-name"></span>
+            <input id="userjob" required type="text" minlength="2" maxlength="30"  name="prof" class="popup-edit__input popup-edit__input_userjob" placeholder="О себе">
+            <span id="error-userjob" class="popup-edit__valid popup-edit__valid-prof"></span>
+            <button id="submit1" name="editProf" type="submit" class="button popup-edit__button" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+     <div class="popup-image">
+      <div class="popup-image__content">
+        <img src="src/images/close.svg" alt="" class="popup-image__close">
+        <img src="" alt="" class="popup-image__view">
+      </div>
+    </div>
+  </div>
+  <script  src="main.837abe25a8324a316b23.js?7cb234b880820f07da49"></script>
+</body>
+</html>
