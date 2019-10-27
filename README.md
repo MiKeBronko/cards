@@ -5,12 +5,15 @@
 ###webpack
 ###CSS-код минимизирован, проставлены вендорные префиксы
 ###Плагин для чтения CSS внутри JS-кода
+
 -npm i mini-css-extract-plugin --save-dev
 
--
 ###Пакет для добавления CSS-файлов в index.js
+
 -npm i css-loader --save-dev
+
 ###Установите плагин, чтобы вебпак научился работать с HTML
+
 -npm install html-webpack-plugin --save-dev
 ##№Отлслеживание изменений по хешу 
 -npm i webpack-md5-hash --save-dev
