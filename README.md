@@ -2,23 +2,22 @@
 ## ver 0.0.1
 
 ### Выполнена следующая работа:
-### Установлен
+### Установлен:
  - node.js
  - webpack
-### CSS-код минимизирован, проставлены вендорные префиксы
 ### Установлен плагин для чтения CSS внутри JS-кода
 - npm i mini-css-extract-plugin --save-dev
 ### Установлен пакет для добавления CSS-файлов в index.js
 - npm i css-loader --save-dev
 ### Установлен плагин для работы вебпака с HTML
 - npm install html-webpack-plugin --save-dev
-### Отлслеживание изменений по хешу
+### Установлен плагин для отлслеживания изменений по хешу
 - npm i webpack-md5-hash --save-dev
 ### Установлен PostCSS — плагин для обработки CSS
 - npm i postcss-loader --save-dev
-### Вендорные префиксы
+### Установлен плагин для вендорных префиксов
 - npm i autoprefixer --save-dev
-### Минификациия CSS-кода
+### Установлен плагин для минификациии CSS-кода
 - npm i cssnano --save-dev
 ### Сайт открывается в интернете по адресу: <https://mikebronko.github.io/cards/>
 # Инструкция как развернуть проект (local):
