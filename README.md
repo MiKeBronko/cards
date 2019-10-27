@@ -1,6 +1,7 @@
 # sprint11 - node.js & webpack
 ## ver 0.0.1
-### Установлены для оптимизации картинкок и шрифтов:
+
+### Выполнена следующая работа:
 
 ###node.js
 
@@ -8,15 +9,15 @@
 
 ###CSS-код минимизирован, проставлены вендорные префиксы
 
-###Плагин для чтения CSS внутри JS-кода
+###Установлен плагин для чтения CSS внутри JS-кода
 
 -npm i mini-css-extract-plugin --save-dev
 
-###Пакет для добавления CSS-файлов в index.js
+###Установлен пакет для добавления CSS-файлов в index.js
 
 -npm i css-loader --save-dev
 
-###Установите плагин, чтобы вебпак научился работать с HTML
+###Установлен плагин для работы вебпака с HTML
 
 -npm install html-webpack-plugin --save-dev
 
@@ -24,7 +25,7 @@
 
 -npm i webpack-md5-hash --save-dev
 
-###PostCSS — плагин для обработки CSS
+###Установлен PostCSS — плагин для обработки CSS
 
 -npm i postcss-loader --save-dev
 
