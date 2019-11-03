@@ -1,19 +1,5 @@
-/*------------------------------7-----------------------*/
 const link = document.querySelector('#link');
-const linkValid = /^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-Za-zА-Яа-я0-9\-]*\.?)*\.{1}[A-Za-zА-Яа-я0-9-]{2,8}(\/([\w#!:.?+=&%@!\-\/])*)?/;
-
-
-
-
-  form.addEventListener('input', (elem) => {
-      validate(event.target);
-      validPopup(elem);
-  });
-
-  formEdit.addEventListener('input', (elem) => {
-      validate(event.target);
-      validEditPopup(elem);
-  });
+const linkValid = /^(ftp|https?:\/\/)?(www\.)?([\w]{1}[\w\.-]*\.?)*\.{1}[\w\.-]{2,8}(\/([\w#!:.?+=&%@!\-\/])*)?/;
 
 
   function validate(element) {
@@ -79,7 +65,7 @@ const linkValid = /^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-
 
   function validEditPopup(event) {
      event.preventDefault();
-     const inputsuser = Array.from(formEdit.elements);
+     const inputsuser = Array.from(document.forms.formInfoUser.elements);
      inputsuser.forEach((elem) => {
       if (elem.id !== submit1.id) {
         validate(elem);
@@ -89,7 +75,7 @@ const linkValid = /^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-
   
   function validPopup(event) {
     event.preventDefault();
-    const inputsuser1 = Array.from(form.elements);
+    const inputsuser1 = Array.from(document.forms.new.elements);
     inputsuser1.forEach((elem) => {
      if (elem.id !== submit.id && elem.id == link.id) {
        validate(elem);
@@ -99,7 +85,4 @@ const linkValid = /^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-
    });
  }
 
-// Хорошо
-// Выполнен функционал задания
-// Можно обратить внимание на форматирование кода в едином стиле
-// очистку лишних переменных
+ export {validate, validEditPopup, validPopup};
